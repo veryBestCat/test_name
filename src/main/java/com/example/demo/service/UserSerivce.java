@@ -3,7 +3,6 @@ package com.example.demo.service;
 import com.example.demo.dto.User;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class UserSerivce {
@@ -16,5 +15,8 @@ public class UserSerivce {
 
     public boolean add(User user) {
         return users.add(user);
+    }
+    public boolean addAll(List<User> users) {
+        return users.addAll(users);
     }
 }

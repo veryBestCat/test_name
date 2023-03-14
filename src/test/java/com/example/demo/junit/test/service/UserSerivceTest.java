@@ -4,14 +4,13 @@ import com.example.demo.dto.User;
 import com.example.demo.service.UserSerivce;
 import org.junit.jupiter.api.*;
 
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 @TestInstance(TestInstance.Lifecycle.PER_METHOD)
-public class UserSerivceTest {
+class UserSerivceTest {
     private static final User IVAN = User.of(2, "1234", "Ivan");
     private static final User PETR = User.of(3, "1234", "Petr");
 
